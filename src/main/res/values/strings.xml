@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ArcadeRacing</string>
+
+    <string name="app_logo_top">BEEN THERE</string>
+    <string name="app_logo_bottom">DONE THAT!</string>
+
+    <string name="app_version_info">
+        Version 2.0.0\n
+        Copyright © 2011 Mamlambo\n
+        All Rights Reserved.
+    </string>
+</resources>

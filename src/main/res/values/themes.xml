@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TEMA BASE -->
+    <style name="Base.Theme.ArcadeRacing" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Desactivar colores automáticos de Material3 -->
+        <item name="materialButtonStyle">@style/ArcadeButton</item>
+        <item name="android:buttonStyle">@style/ArcadeButton</item>
+
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSecondary">@color/secondary</item>
+
+        <!-- Fondo general -->
+        <item name="android:colorBackground">@color/onPrimary</item>
+    </style>
+
+    <!-- TEMA FINAL -->
+    <style name="Theme.ArcadeRacing" parent="Base.Theme.ArcadeRacing" />
+
+    <!-- ESTILO PERSONALIZADO PARA BOTONES -->
+    <style name="ArcadeButton" parent="Widget.Material3.Button">
+        <!-- Fondo personalizado (imagen o shape) -->
+
+        <!-- Desactivar ripple de Material3 si molesta -->
+        <item name="android:foreground">@null</item>
+        <!-- Texto -->
+        <item name="android:textColor">@color/onPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">12dp</item>
+
+        <!-- Para evitar que Material3 reemplace tu fondo -->
+        <item name="backgroundTint">@null</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+</resources>

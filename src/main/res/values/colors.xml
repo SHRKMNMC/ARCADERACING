@@ -1,0 +1,17 @@
+<resources>
+    <color name="primary">#FF9800</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="secondary">#FFC107</color>
+    <color name="background">#1A1A1A</color>
+
+    <color name="primary_dark">#FFB74D</color>
+    <color name="onPrimary_dark">#000000</color>
+    <color name="secondary_dark">#FFA000</color>
+    <color name="background_dark">#000000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="logo_color">#FFFF0F</color>
+    <color name="version_color">#F0F0F0</color>
+    <color name="version_bkgrd">#1A1A48</color>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEC1A0"
+    android:padding="16dp">
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <!-- SCORE + TIMER -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txtScore"
+                android:text="Puntos: 0"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtTimer"
+                android:text="Tiempo: 5:00"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:gravity="end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- TABLERO 2048 -->
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="345dp"
+            android:layout_height="346dp"
+            android:layout_marginTop="20dp"
+            android:background="#B68061"
+            android:columnCount="4"
+            android:rowCount="4" />
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Deshacer"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6c757d"
+            android:elevation="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <!-- OVERLAY flotante para arrastrar -->
+    <TextView
+        android:id="@+id/draggableTile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#EEE"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:visibility="gone" />
+
+</FrameLayout>
